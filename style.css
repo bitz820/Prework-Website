@@ -1,3 +1,76 @@
+/* color palette to use
+#cce6bd
+#7cbee6
+#94e665
+#e34ee6
+#e6aa5a */
+
+
 body {
-    background: blueviolet;
+    background: #CCE6BD;
+    font-family:fantasy;
+    color: #e6aa5a;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: #7cbee6;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+nav span {
+    border: 5px #e6aa5a solid;
+    padding: 2px;
+}
+
+div.about{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 80px;
+    color: #e34ee6;
+}
+
+.aboutpic{
+    border: 12px #7cbee6 solid;
+
+}
+
+div#twopics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#twopics img {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+div.projects-content {
+    display: flex;
+    flex-flow: wrap;
+    height: auto;
+    justify-content: space-between;
+}
+
+a#projects-content {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height:fit-content;
+    border: #e34ee6 12px solid;
+    margin: 20px;
+}
+
+div.contact{
+    
 }
