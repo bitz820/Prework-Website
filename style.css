@@ -72,5 +72,10 @@ a#projects-content {
 }
 
 div.contact{
-    
+    /* display: flex; */
 }
+
+div #btncont{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;}
