@@ -71,6 +71,12 @@
             transform: scale(1);
         }
     }
+
+  /*
+  =============== 
+  SIDEBAR
+  ===============
+  */
     .sidebar-toggle {
         position: fixed;
         top: 20px;
@@ -145,16 +151,76 @@
         color: #6d0a03;
     }
     
-
   @media screen and (min-width: 676px) {
     .sidebar {
-      width: 400px;
+      width: 220px;
     }
   }
 
-div.about{
+  /*
+  =============== 
+  Questions/About Me
+  ===============
+  */
+  .title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+  }
+  
+  .question {
+    box-shadow: var(--light-shadow);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 25px;
+  }
+  
+  .question-btn {
+    font-size: 30px;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--clr-gold);
+    transition: var(--transition);
+  }
+  .question-btn:hover {
+    transform: rotate(90deg);
+  }
+  .question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .question-text p {
+    margin-bottom: 0;
     font-size: 18px;
-}
+  }
+  /* hide text */
+  .question-text {
+    display: none;
+  }
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    display: none;
+  }
+  .show-text .minus-icon {
+    display: inline;
+  }
+  .show-text .plus-icon {
+    display: none;
+  }
+
+ /*
+  =============== 
+  Misc Formatting
+  ===============
+  */
 
 h1 {
     font-size: 80px;
@@ -204,3 +270,13 @@ div #btncont{
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
+
+#hello {
+  width: 250px;
+  
+}
+/* 
+.home {
+  display: flex;
+  flex-direction: column;
+} */
