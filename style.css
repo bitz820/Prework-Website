@@ -1,45 +1,172 @@
-/* color palette to use
-#cce6bd
-#7cbee6
-#94e665
-#e34ee6
-#e6aa5a */
 
+:root {
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --max-width: 1170px;
+    --fixed-width: 620px;
+  }
 
-body {
-    background: #CCE6BD;
-    font-family:fantasy;
-    color: #e6aa5a;
-    text-align: center;
-}
+  /*
+  =============== 
+  Global Styles
+  ===============
+  */
+  
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    color: #7cbee6;
-    font-size: 30px;
-    font-weight: bolder;
+  body {
+        background: #925301;
+        font-family:fantasy;
+        color: #e6aa5a;
+        text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*  global classes */
+  
+  /* section */
+  .section {
+    padding: 5rem 0;
+  }
+  
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+    }
+  }
+  
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+    @keyframes bounce {
+      0% {
+          transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .sidebar-toggle {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        background: transparent;
+        border-color: transparent;
+        transition: var(--transition);
+        cursor: pointer;
+        animation: bounce 2s ease-in-out infinite;
+      }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #4389e4;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      row-gap: 1rem;
+      transition: var(--transition);
+      transform: translate(-100%);
+    }
+    .show-sidebar {
+      transform: translate(0);
+    }
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+    .close-btn {
+        font-size: 22px;
+        background: transparent;
+        border-color: transparent;
+        color: red;
+        transition: var(--transition);
+        cursor: pointer;
+    }
+    .close-btn:hover {
+        color: rgb(105, 13, 59);
+        transform: rotate(360deg);
+    }
+    .logo {
+        height: 90px;
+    }
     
-}
+    .links a {
+        display: block;
+        font-size: 30px;
+        padding: 1rem 1.5rem;
+        color: #e6aa5a;
+        transition: var(--transition);
+    }
+    .links a:hover {
+        color: #6d0a03    ;
+        padding-left: 1.75rem;
+    }
+    .social-icons {
+        justify-self: center;
+        display: flex;
+        padding-bottom: 2rem;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: #e6aa5a;
+        transition: var(--transition);
+    }
+    .social-icons a:hover {
+        color: #6d0a03;
+    }
+    
 
-nav span {
-    border: 5px #e6aa5a solid;
-    padding: 2px;
-}
+  @media screen and (min-width: 676px) {
+    .sidebar {
+      width: 400px;
+    }
+  }
 
 div.about{
     font-size: 18px;
-    font-weight: bold;
 }
 
 h1 {
     font-size: 80px;
-    color: #e34ee6;
+    color: #e6aa5a;
 }
 
 .aboutpic{
-    border: 12px #7cbee6 solid;
+    border: 12px #6d0a03 solid;
+}
 
+.aboutpic#grasshopper{
+    height: 400px;
 }
 
 div#twopics {
@@ -47,10 +174,9 @@ div#twopics {
     align-items: center;
     justify-content: space-between;
 }
-
 div#twopics img {
     display: flex;
-    width: 50%;
+    width: calc(50% - 44px);
     justify-content: space-around;
     margin: 10px;
 }
@@ -61,21 +187,20 @@ div.projects-content {
     height: auto;
     justify-content: space-between;
 }
-
 a#projects-content {
     display: flex;
     flex-direction: column;
     width: 20%;
     height:fit-content;
-    border: #e34ee6 12px solid;
+    border: #6d0a03 8px solid;
     margin: 20px;
-}
-
-div.contact{
-    /* display: flex; */
+    background: slategray;
+    color: white;
 }
 
 div #btncont{
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}

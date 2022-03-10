@@ -12,19 +12,52 @@
 
 <body class="color">
     <!-- Nav Bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact
-            <!-- Ideally this opens in a drop down menu so you can choose anything from the top too -->
-        </a>
+    <button class="sidebar-toggle">
+        ///
+    </button>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="bacon.jpeg" class="logo" alt="">
+            <button class="close-btn">X</button>
 
-    </nav>
-    <button class="colorBtn">Don't Like the Background Color? Change It!</button>
+        </div>
+        <ul class="links">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <ul class="social-icons" class="fab">
+            <li>
+                <a href="https://github.com/bitz820">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mark-bacon-718a9222a/">Linkedin</a>
+                <i class="fab fa-linkedin"></i>
+
+            </li>
+            <li>
+                <a href="mailto:mark.n.bacon.jr@gmail.com">Email Me</a>
+            </li>
+        </ul>
+
+    </aside>
+
+        <!--Home -->
     <div class="home">
         <a id="home">
-            <h1>Hi There! I'm Mark</h1>
+            <img src="./wave.gif" alt="" id="hello">
+            <h1>I'm Mark Bacon</h1>
+            <div><button class="colorBtn">Don't Like the Background Color? Change It!</button>
+                </div>
             <img src="./images/Aboutme1.JPG" alt="Purple" class="aboutpic">
         </a>
     </div>
@@ -33,15 +66,16 @@
     <h1>About</h1>
     <div class="about">
         <p id="about">I am a budding Software Engineer with a background in Musical Theatre.
+           <p> I am looking to expand my creative endeavors and solve complex problems by reading, writing, debugging, and
+            rendering code for practical application.</p>
+
         <div id="twopics">
             <img src="https://miro.medium.com/max/1400/0*WS1pbNvHYQVdQW6t.jpg" alt="MT Coding" class="aboutpic">
             <img src="./images/Aboutme3.jpg" alt="Mamma Mia" class="aboutpic">
         </div>
-        I am looking to expand my creative endeavors and solve complex problems by reading, writing, debugging, and
-        rendering code for practical application.
 
-        <img src="./images/Aboutme2.jpg" alt="Grasshopper" class="aboutpic">
-        <h3> Like what you see? Let's hop to it! </h3>
+        <h3> Let's hop to it! </h3>
+        <img src="./images/Aboutme2.jpg" alt="Grasshopper" class="aboutpic" id="grasshopper">
         </p>
     </div>
 
