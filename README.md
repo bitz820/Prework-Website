@@ -46,3 +46,16 @@ Followed a Vanilla JS project to incorporate more accessability in Website
     -added button animation with plus and minus buttons
 #JS
     -added event listeners two ways (through accessing parent elements on DOM and through selecting selectors from already created elements -- this second way allows for the class list to change for each button selected and not all at once: ie are able to collapse/change class list of all buttons at time that one is selected)
+
+#Push 6 (3/11)
+#HTML 
+    -refactored my project portfolio
+    -linked the photo of each project to an external link that takes user to project
+    -each project has a photo, title, what framework was used, and a descrtiption of the project
+#CSS 
+    -added color and animation to the scroll buttons
+    -created a carousel of proejcts completed
+#JS
+    -added event listeners the buttons in order to scroll through
+    -even listener to a button that will randomly generate a project
+    -when the array of projects has been scrolled through, created a loop to loop back to first or lst item in array of projects
