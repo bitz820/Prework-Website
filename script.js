@@ -1,3 +1,4 @@
+// Color Generator
 
 let colorBtn = document.querySelector(".colorBtn")
 const colors = [1, 2, 3, 4, 5, 6, 7, 9, "a", "b", "c", "d", "e", "f"]
@@ -117,7 +118,7 @@ const projects = [
         projectName: "Project 5",
         framework: 'Capstone',
         img: "https://edmethods.com/wp-content/uploads/2019/10/Final-Project-2000x1200.png",
-        description: "I'm baby banh mi chartreuse ugh, pitchfork fashion axe taiyaki literally green juice man braid microdosing flannel farm-to-table truffaut. Cred raclette fanny pack, hell of pug small batch hella organic seitan tilde taiyaki letterpress freegan lomo. Biodiesel taxidermy gentrify venmo schlitz bicycle rights selvage dreamcatcher paleo offal cloud bread viral skateboard. Bespoke church-key locavore small batch, cronut salvia ugh twee stumptown literally +1 bicycle rights tumblr. Street art tilde chambray wolf food truck."    
+        description: "I'm baby banh mi chartreuse ugh, pitchfork fashion axe taiyaki literally green juice man braid microdosing flannel farm-to-table truffaut. Cred raclette fanny pack, hell of pug small batch hella organic seitan tilde taiyaki letterpress freegan lomo. Biodiesel taxidermy gentrify venmo schlitz bicycle rights selvage dreamcatcher paleo offal cloud bread viral skateboard. Bespoke church-key locavore small batch, cronut salvia ugh twee stumptown literally +1 bicycle rights tumblr. Street art tilde chambray wolf food truck."
     },
 ];
 
@@ -165,8 +166,101 @@ prevBtn.addEventListener('click', function () {
     showProject(defaultItem)
 })
 
-// random
+// show random project
 randomBtn.addEventListener('click', function () {
     let randomNum = Math.floor(Math.random() * projects.length)
     showProject(randomNum)
 })
+
+// create a countdown timer for graduation
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
+
+const graddate = document.querySelector('.graddate')
+const deadline = document.querySelector('.deadline')
+const items = document.querySelectorAll('.deadline-format h4')
+
+let futureDate = new Date(2022, 5, 24, 17)
+console.log(futureDate)
+
+const year = futureDate.getFullYear();
+let month = futureDate.getMonth();
+month = months[month]
+const date = futureDate.getDate()
+let day = weekdays[futureDate.getDay()];
+
+let hour = futureDate.getHours();
+function tConv24(hour) {
+    let h = (hour % 12) || 12;
+    return h
+  };
+
+hour = tConv24(hour)
+graddate.textContent = `Graduation from Flatiron School Software Engineering program is ${day}, ${month} ${date}th ${year} at ${hour}:00pm`
+
+// future time in ms
+const futureTime = futureDate.getTime();
+
+function getRemainingTime() {
+    const timeNow = new Date().getTime();
+    const t = futureTime - timeNow;
+    // console.log(t)
+
+    // 1 s = 1000ms
+    // 1 m = 60 s
+    // 1 h = 60m
+    // 1 d = 24 hr
+
+    // values in ms
+    const oneDay = 24*60*60*1000
+    const oneHour = 60*60*1000
+    const oneMin = 60*1000;
+
+    let days = Math.floor(t/oneDay);
+    let hours = Math.floor((t%oneDay/oneHour));
+    let mins = Math.floor((t%oneHour/oneMin));
+    let secs = Math.floor((t%oneMin/1000));
+
+    // set values array
+    const values = [days, hours, mins, secs];
+
+    function format(item){
+        if (item <10){
+            return item = `0${item}`
+        }
+        return item
+    }
+
+    items.forEach(function(item, index){
+        item.innerHTML = format(values[index])
+    });
+    if(t<0){
+        clearInterval(countdown);
+        deadline.innerHTML = `<h3 class="expired">Graduation Complete!</h3>`
+    }
+
+}
+// countdown
+let countdown = setInterval(getRemainingTime, 1000)
+getRemainingTime()

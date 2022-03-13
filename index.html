@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Bacon Builds Better</title>
-
+    <script src="https://use.fontawesome.com/7de61d405f.js"></script>
 </head>
 
 <body class="color">
     <!-- Nav Bar -->
     <button class="sidebar-toggle">
-        ///
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <aside class="sidebar">
         <div class="sidebar-header">
             <img src="bacon.jpeg" class="logo" alt="">
-            <button class="close-btn">X</button>
+            <button class="close-btn">
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </button>
 
         </div>
         <ul class="links">
@@ -35,17 +37,21 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-        <ul class="social-icons" class="fab">
+        <ul class="social-icons" id="social">
             <li>
-                <a href="https://github.com/bitz820">GitHub</a>
+                <a href="https://github.com/bitz820">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/mark-bacon-718a9222a/">Linkedin</a>
-                <i class="fab fa-linkedin"></i>
-
+                <a href="https://www.linkedin.com/in/mark-bacon-718a9222a/">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="mailto:mark.n.bacon.jr@gmail.com">Email Me</a>
+                <a href="mailto:mark.n.bacon.jr@gmail.com">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
             </li>
         </ul>
 
@@ -62,10 +68,11 @@
     </div>
 
     <!-- About Section (should be question dropdowns) -->
-    <section class="questions" id="about">
-        <!-- title -->
-        <div class="title">
+    <div class="title">
+        <section class="questions" id="about">
+            <!-- title -->
             <h1>About Me</h1>
+            <div class="underline"></div>
             <div class="about">
                 <div id="twopics">
                     <img src="https://miro.medium.com/max/1400/0*WS1pbNvHYQVdQW6t.jpg" alt="MT Coding" class="aboutpic">
@@ -73,103 +80,109 @@
                 </div>
 
             </div>
-        </div>
-        <!-- questions -->
-        <div class="section-center">
-            <!-- single question start -->
-            <article class="question">
-                <div class="question-title">
-                    <!-- question title -->
-                    <p>WHO ARE YOU?</p>
-                    <button type="button" class="question-btn">
-                        <span class="plus-icon">
-                            <i class="far fa-plus-square">+</i>
-                        </span>
-                        <span class="minus-icon">
-                            <i class="far fa-minus-square">-</i>
-                        </span>
-                    </button>
-                </div>
-                <!-- question text goes here -->
-                <div class="question-text">
-                    <p>I am a budding full-stack Software Engineer with a background in Musical Theatre. I am
-                        adventurous and love
-                        to take on things I have never done before. I live by the motto that every day is a chance to
-                        learn something I didn't know the day before. This has manifested itself in many ways!
-                    <ul>
 
-                        <li>
-                            <br>A successful NYC Musical Theatre career
-                        </li>
-                        <li>
-                            <br>Working as the only American aboard a German Cruise Line
-                        </li>
-                        <li>
-                            <br>Buying, remodeling/rennovating, traveling in, and then flipping Motorhomes
-                        </li>
-                    </ul>
-                    <br>I am always on the lookout for something to push me out of my comfort zone!</p>
-                </div>
-            </article>
-            <!-- single question end -->
-            <!-- single question start -->
-            <article class="question">
-                <div class="question-title">
-                    <!-- question title -->
-                    <p>WHY THE SWITCH TO SOFTWARE ENGINEERING?</p>
-                    <button type="button" class="question-btn">
-                        <span class="plus-icon">
-                            <i class="far fa-plus-square">+</i>
-                        </span>
-                        <span class="minus-icon">
-                            <i class="far fa-minus-square">-</i>
-                        </span>
-                    </button>
-                </div>
-                <!-- question text goes here -->
-                <div class="question-text">
-                    <p>I have always loved puzzles! I am looking to expand my creative endeavors and solve complex
-                        problems by reading, writing, debugging, and rendering code for practical application. <br>
+            <!-- questions -->
+            <div class="section-center">
+                <!-- single question start -->
+                <article class="question">
+                    <div class="question-title">
+                        <!-- question title -->
+                        <p>WHO ARE YOU?</p>
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text goes here -->
+                    <div class="question-text">
+                        <p>I am a budding full-stack Software Engineer with a background in Musical Theatre. I am
+                            adventurous and love
+                            to take on things I have never done before. I live by the motto that every day is a chance
+                            to
+                            learn something I didn't know the day before. This has manifested itself in many ways!
+                        <ul>
 
-                        <br>After the pandemic forced a halt of gathering in large groups, I was
-                        interested in diversifying my opportunities. I love to take a challenge and put my own spin on
-                        it. I am a creative individual with a problem-solving mindset so this seemed like a natural next
-                        step for me.
+                            <li>
+                                <br>A successful NYC Musical Theatre career
+                            </li>
+                            <li>
+                                <br>Working as the only American aboard a German Cruise Line
+                            </li>
+                            <li>
+                                <br>Buying, remodeling/rennovating, traveling in, and then flipping Motorhomes
+                            </li>
+                        </ul>
+                        <br>I am always on the lookout for something to push me out of my comfort zone!</p>
+                    </div>
+                </article>
+                <!-- single question end -->
+                <!-- single question start -->
+                <article class="question">
+                    <div class="question-title">
+                        <!-- question title -->
+                        <p>WHY THE SWITCH TO SOFTWARE ENGINEERING?</p>
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text goes here -->
+                    <div class="question-text">
+                        <p>I have always loved puzzles! I am looking to expand my creative endeavors and solve complex
+                            problems by reading, writing, debugging, and rendering code for practical application. <br>
 
-                    </p>
-                </div>
-            </article>
-            <!-- single question end -->
+                            <br>After the pandemic forced a halt of gathering in large groups, I was
+                            interested in diversifying my opportunities. I love to take a challenge and put my own spin
+                            on
+                            it. I am a creative individual with a problem-solving mindset so this seemed like a natural
+                            next
+                            step for me.
 
-            <!-- single question start -->
-            <article class="question">
-                <div class="question-title">
-                    <!-- question title -->
-                    <p>WHERE DO YOU TRAIN? WHAT DO YOU KNOW?</p>
-                    <button type="button" class="question-btn">
-                        <span class="plus-icon">
-                            <i class="far fa-plus-square">+</i>
-                        </span>
-                        <span class="minus-icon">
-                            <i class="far fa-minus-square">-</i>
-                        </span>
-                    </button>
-                </div>
-                <!-- question text goes here -->
-                <div class="question-text">
-                    <p>I received my Bachelor of Fine Arts from THE Florida State University (GO NOLES!). As far as
-                        programming is concerned, I began as a self-taught programmer going through both the Odin
-                        Project as well as Free Code Camp before settling on a BootCamp to really test my stamina and
-                        take me to the next level. I am currently enrolled in the Software Engineering Program at
-                        Flatiron School in New York City.</p>
-                    <br>I am familiar with HTML, CSS, Javascript, and Ruby as well as the React and Rails
-                    Frameworks. I am always looking to learn more; after all, it's not the language you know, rather the
-                    understanding of how to solve the problem in any language.
-                </div>
-            </article>
-            <!-- single question end -->
-        </div>
-    </section>
+                        </p>
+                    </div>
+                </article>
+                <!-- single question end -->
+
+                <!-- single question start -->
+                <article class="question">
+                    <div class="question-title">
+                        <!-- question title -->
+                        <p>WHERE DO YOU TRAIN? WHAT DO YOU KNOW?</p>
+                        <button type="button" class="question-btn">
+                            <span class="plus-icon">
+                                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- question text goes here -->
+                    <div class="question-text">
+                        <p>I received my Bachelor of Fine Arts from THE Florida State University (GO NOLES!). As far as
+                            programming is concerned, I began as a self-taught programmer going through both the Odin
+                            Project as well as Free Code Camp before settling on a BootCamp to really test my stamina
+                            and
+                            take me to the next level. I am currently enrolled in the Software Engineering Program at
+                            Flatiron School in New York City.</p>
+                        <br>I am familiar with HTML, CSS, Javascript, and Ruby as well as the React and Rails
+                        Frameworks. I am always looking to learn more; after all, it's not the language you know, rather
+                        the
+                        understanding of how to solve the problem in any language.
+                    </div>
+                </article>
+                <!-- single question end -->
+            </div>
+        </section>
+    </div>
     <h2> Enough about me... Let's hop to it! </h2>
     <img src="./images/Aboutme2.jpg" alt="Grasshopper" class="aboutpic" id="grasshopper">
 
@@ -188,7 +201,7 @@
                 <div class="img-container">
                     <a href="https://google.com">
                         <img src="https://4.bp.blogspot.com/-8U9UaLlJfII/WvZvgmx4czI/AAAAAAAAAoU/1bOJxQ9awFE7KdqgYPcBkeFsj5saEix5QCEwYBhgL/s1600/LABELS%2B-02.jpg"
-                        id="project-img" alt="Project 1 Link">
+                            id="project-img" alt="Project 1 Link">
                     </a>
                 </div>
                 <h1 id="projectName">Project 1</h1>
@@ -198,8 +211,12 @@
                     veritatis laborum voluptas ullam deserunt repudiandae id cum.</p>
                 <!-- prev and next buttons to scroll -->
                 <div class="button-container">
-                    <button class="prev-btn"><</button>
-                    <button class="next-btn">></button>
+                    <button class="prev-btn">
+                        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                    </button>
                 </div>
                 <!-- random button -->
                 <button class="random-btn">Generate Random Project</button>
@@ -208,6 +225,50 @@
     </main>
 
 
+    <!-- Days to Graduation Countdown -->
+    <section class="grad-section-center">
+        <article class="grad">
+            <h3>Countdown to Flatiron Graduation</h3>
+            <h4 class="graddate">
+                <!-- Graduation from Flatiron School Software Engineering program is Friday, June 24th 2022 at 5:00pm -->
+            </h4>
+            <div class="deadline">
+                <!-- days -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="days">100</h4>
+                        <span>days</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- hours -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="hours">22</h4>
+                        <span>hours</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- mins -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="mins">36</h4>
+                        <span>mins</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- secs -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="secs">12</h4>
+                        <span>secs</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+            </div>
+        </article>
+    </section>
 
 
 
@@ -215,28 +276,42 @@
 
 
 
-    
     <div class="contact" id="contact">
         <h2>Still like what you see? </h2>
         <h1> Get in touch!</h1>
+        <div class="underline"></div>
         <!-- Links here to my GitHub, LinkdIn, email -->
         <!-- dnyamically add Event Listeners to these buttons! -->
-        <div id="btncont">
-            <button id="github">GitHub!</button>
-            <button id="linkedin">Linked In!</button>
-            <button id="email">Email Me!</button>
+        <div class="contactBtns">
+            <button class="btncont" id="github">
+                <a href="https://github.com/bitz820">
+                    <i class="fa fa-github fa-2x" style="color:#e6aa5a" aria-hidden="true">
+                        <br>GitHub!
+                    </i>
+                </a>
+            </button>
+            <button class="btncont" id="linkedin">
+                <a href="https://www.linkedin.com/in/mark-bacon-718a9222a/">
+                    <i class="fa fa-linkedin fa-2x" style="color:#e6aa5a" aria-hidden="true">
+                        <br>Linked In!
+                    </i>
+                </a>
+            </button>
+            <button class="btncont" id="email">
+                <a href="mailto:mark.n.bacon.jr@gmail.com">
+                    <i class="fa fa-envelope fa-2x" style="color:#e6aa5a" aria-hidden="true">
+                        <br>Email Me!</i>
+                </a>
+            </button>
         </div>
     </div>
-    
-    
+
+
     <script src="script.js"></script>
 </body>
 
 </html>
 <!-- 
-
-
-
     <div class="projects" id="projects">
         <h1>Projects I have created</h1>
         <div class="projects-content">

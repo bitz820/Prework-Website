@@ -59,3 +59,21 @@ Followed a Vanilla JS project to incorporate more accessability in Website
     -added event listeners the buttons in order to scroll through
     -even listener to a button that will randomly generate a project
     -when the array of projects has been scrolled through, created a loop to loop back to first or lst item in array of projects
+
+#Push 7 (3/12)
+#HTML
+    -added countdown to graduation timer
+#CSS
+    -styled timer in individual divs
+    -added margins to countdown
+    -made all buttons larger
+    -removed/refactored uneccesary stylings
+    -used fontawesome to create left and right carats, menu bars, expand and contract buttons, and social icons that are more readable
+    -manually edited HTML to add color correction to social media buttons
+#JS
+    -dynamically inserted my graduation date
+    -created a countdown based with days, hours, minutes, seconds
+    -created a loop to ensure when value is less than 10, we add a 0 to front
+    -when countdown expires, the boxes disappear and message is displayed
+    -reset interval so the countdown of seconds happens in real time, not on refresh
+    -found and applied function that will convert 24hr time to 12 hour time
